@@ -8,6 +8,7 @@ npm install
 
 ## Database Setup
 Firstly, [update database config file here](https://github.com/serhatyuna/bookworm-backend/blob/master/config/config.json)
+
 Then, run this command to create tables:
 ```
 npx sequelize-cli db:migrate
@@ -68,7 +69,7 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `random_books`  AS  select `b`.`id` AS `id`,`b`.`title` AS `title`,`b`.`cover` AS `cover`,`a`.`firstName` AS `authorFirstName`,`a`.`lastName` AS `authorLastName`,`g`.`type` AS `genre` from ((`books` `b` join `authors` `a` on((`b`.`authorID` = `a`.`id`))) join `genres` `g` on((`b`.`genreID` = `g`.`id`))) order by rand() limit 5 ;
 ```
 
-### Compiles and hot-reloads for development
+## Compiles and hot-reloads for development
 ```
 npm run dev
 ```
