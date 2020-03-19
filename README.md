@@ -1,6 +1,13 @@
 # bookworm-backend
 Backend of Bookworm
 
+## Demo
+[https://bookwormapp.netlify.com/](https://bookwormapp.netlify.com/)
+
+username: demo
+
+password: demo
+
 ## Project setup
 ```
 npm install
