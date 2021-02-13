@@ -80,3 +80,6 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 ```
 npm run dev
 ```
+
+## LICENSE
+MIT License
